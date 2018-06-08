@@ -17,4 +17,3 @@ RUN apt-get update \
     apt-get update \
     apt-get install docker-ce -y \
     adduser jenkins docker
-USER jenkins
