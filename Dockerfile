@@ -9,9 +9,9 @@ RUN apt-get update \
     gnupg2 \
     software-properties-common \
     curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - \
-    apt-key fingerprint 0EBFCD88 \
-    add-apt-repository
-RUN "deb [arch=amd64] https://download.docker.com/linux/debian \
+    apt-key fingerprint 0EBFCD88
+    
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian \
     $(lsb_release -cs) \
     stable"
 RUN apt-get update \
